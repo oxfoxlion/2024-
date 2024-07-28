@@ -1,0 +1,702 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+	box-sizing:border-box;
+	}
+
+img{
+	max-width:100%; /*設定為父元素的寬度*/
+	height:auto;
+	display:block; /*移除圖片下方多餘空間*/
+	}
+
+/* start */
+/* 共通樣式 */
+body{
+	font-family: "Noto Sans TC", sans-serif;
+	line-height: 1.5;
+}
+
+.roboto-black-italic {
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 48px;
+  }
+
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.color-deepRed{
+	color: #650300;
+}
+
+.color-Red{
+	color:#AA0601;
+}
+
+.color-white{
+	color: #FFFFFF;
+}
+
+.bg-white{
+	background-color: #FFFFFF;
+}
+
+.bg-red{
+	background: #AA0601;
+}
+
+.button{
+	background-color: #AA0601;
+	color: #FFFFFF;
+}
+
+.bg-pink{
+	background-color: #FBF2F2;
+}
+
+h3{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* header */
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 0;
+}
+
+.logo{
+	background-image: url(./week3-4/Web/logo-new_工作區域\ 1.png);
+	background-position: center center;
+	box-sizing: contain;
+	background-repeat: no-repeat;
+	
+}
+
+.logo a{
+	width: 80px;
+	height: 50px;
+	display: block;
+	text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 64px;
+}
+
+.menu a{
+	display: block;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.menu a:hover{
+	color: #650300;
+}
+
+.bg-img-header{
+	background-image: url(./week3-4/home-header.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.specialRecommendation{
+	padding: 296px 0;
+	text-align: end;
+}
+
+.specialRecommendation h4{
+	font-size: 36px;
+}
+
+.specialRecommendation h2{
+	font-size: 64px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.specialRecommendation .button{
+	font-size: 20px;
+	padding: 6px 12px;
+}
+
+.specialRecommendation .button:hover{
+	background-color: #650300;
+}
+
+/* servers */
+
+.servers{
+	text-align: center;
+	padding: 80px 0;
+}
+
+.servers-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.servers h3{
+	margin-bottom: 24px;
+}
+
+.servers-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.servers-item img{
+	margin-bottom: 16px;
+}
+
+.servers-item h4{
+	margin-bottom: 8px;
+}
+
+/* classic */
+
+.classic{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.classic h3{
+	margin-bottom: 48px;
+}
+
+.classic-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+}
+
+.classic-item img{
+	margin-bottom: 8px;
+}
+
+/* coBranded */
+
+.bg-index{
+	background: url(./week3-4/index-bg.png) no-repeat;
+	box-sizing: calc(100vw);
+	background-position: top center;
+}
+
+.coBranded{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.coBranded h3{
+	margin-bottom: 48px;
+}
+
+.coBranded-items{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile{
+	display: none;
+}
+
+/* customerRecommend */
+.customerRecommend{
+	text-align: center;
+	padding: 80px 0;
+}
+
+.customerRecommend h3{
+	margin-bottom: 48px;
+}
+
+.customerRecommend-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap:24px;
+}
+
+.customerRecpmmend-item{
+	border: 1px solid #DEE2E6;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px #00000029;
+}
+
+.customer{
+	text-align: left;
+	height: calc(25vh);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 16px;
+}
+
+.customer .customer-content h6{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.customer .customer-content p{
+	font-size: 16px;
+}
+
+.date{
+	font-size: 14px;
+	color: #707070;
+}
+
+/* contact */
+.contact{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.contact h3{
+	margin-bottom: 48px;
+}
+
+.contact-form{
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.contact-form p{
+	font-size: 20px;
+	margin-bottom: 24px;
+}
+
+.contact-form label{
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+
+.inputBox{
+	width: 100%;
+	margin-bottom: 16px;
+	font-size: 16px;
+	padding: 6px 12px;
+	background-color: #FBF2F2;
+}
+
+.inputBox input{
+	border: #000000 1px solid;
+	
+}
+
+.contact-form textarea{
+	height: calc(12vh);
+}
+
+.inputBox-agree{
+	margin-bottom: 48px;
+}
+
+.inputBox-submit input{
+	text-align: center;
+	border:0;
+	padding: 16px 13.5%;
+	font-weight: bold;
+}
+
+.inputBox-submit input:hover{
+	background-color: #650300;
+}
+
+.inputBox-submit{
+	width: 100%;
+	text-align: center;
+}
+
+/* footer */
+
+.footer{
+	padding: 48px 0 32px 0;
+}
+
+.footerLink-menu{
+	display: flex;
+	justify-content: start;
+	gap: 48px;
+	margin-bottom: 40px;
+}
+
+.footerLink-menu a{
+	font-size:16px ;
+}
+
+
+
+.footerLink-social{
+	display: flex;
+	justify-content: end;
+	gap: 32px;
+}
+
+.footerLink-social li{
+	width: 48px;
+}
+
+.footerContact{
+	padding-bottom: 32px;
+	border-bottom: #FFFFFF solid 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.footerContact-info{
+	font-size: 36px;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.footerLink-menu a:hover{
+	text-decoration: underline;
+}
+
+.footerContact .material-symbols-outlined{
+	font-size: 40px;
+	padding-right: 16px;
+}
+
+.copyRight{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 32px;
+}
+
+.copyRight ul{
+	display: flex;
+	justify-content: end;
+	gap:48px;
+}
+
+.copyRight ul li a{
+	font-size: 14px;
+}
+
+.copyRight a:hover{
+	text-decoration: underline;
+}
+
+@media (max-width:1300px) {
+	.container{
+		width: 90%;
+	}
+
+	.servers-items{
+		flex-wrap: wrap;
+	}
+	.servers-item{
+		width: 45%;
+	}
+
+	.customerRecommend-items{
+		flex-wrap: wrap;
+	}
+
+	.customerRecpmmend-item{
+		width: 45%;
+	}
+	
+}
+
+@media (max-width:1060px) {
+	.classic-items{
+		flex-direction: column;
+	}
+	
+	.classic-item{
+		width: 43.75%;
+	}
+}
+
+@media (max-width:800px) {
+	.bg-img-header{
+		background-image: url(./week3-4/home-header-sm.png);
+	}
+	.coBranded-items{
+		flex-direction: column;
+		gap:24px;
+	}
+
+	.contact-form{
+		width: 75%;
+	}
+
+	.footerLink-social{
+		gap: 16px;
+	}
+
+	.footerLink-social li{
+		width: 40px;
+	}
+}
+
+@media (max-width:710px) {
+
+	/* 共通樣式 */
+
+	.container{
+		width: 92%;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	/* header */
+	.header{
+		flex-direction: column;
+		justify-content: start;
+		padding-top:15px;
+		padding-bottom: 0;
+	}
+
+	.logo{
+		margin-right: auto;
+		margin-bottom: 15px;
+	}
+	
+	.menu {
+		width: 100%;
+		flex-wrap: wrap;
+		gap: 0;
+	}
+
+	.menu li{
+		width: 50%;
+	}
+	
+	.menu a{
+		padding-top:12px;
+		padding-bottom: 12px;
+		font-size: 16px;
+		border: #FFFFFF 1px solid;
+	}
+	
+	.menu a:hover{
+		color: white;
+		background-color: #650300;
+	}
+
+	.specialRecommendation{
+		padding: 144px 0;
+	}
+	
+	.specialRecommendation h4{
+		font-size: 16px;
+	}
+	
+	.specialRecommendation h2{
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+
+	.servers-item{
+		width: 100%;
+	}
+
+	.servers-item p{
+		font-size: 16px;
+	}
+	
+	.servers{
+		padding: 40px 0;
+	}
+
+	.classic-item{
+		width: 100%;
+	}
+
+	.classic{
+		padding: 40px 0;
+	}
+
+	.classic h3{
+		margin-bottom: 24px;
+	}
+	.coBranded{
+		padding: 40px 0;
+	}
+	.mobile{
+		display: block;
+	}
+
+	.pc{
+		display: none;
+	}
+	.coBranded h3{
+		margin-bottom: 24px;
+	}
+
+	.customerRecommend{
+		padding: 40px 0;
+	}
+
+	.customerRecommend h3{
+		margin-bottom: 24px;
+	}
+
+	.customerRecpmmend-item{
+		width: 100%;
+	}
+
+	.customerRecommend-items{
+		gap:16px;
+	}
+
+	.contact{
+		padding: 40px 0;
+	}
+
+	.contact h3{
+		margin-bottom: 24px;
+	}
+
+	.contact-form{
+		width: 100%;
+	}
+
+	.contact-form p{
+		font-size: 16px;
+	}
+
+	.inputBox-submit input{
+		width: 100%;
+	}
+
+	.inputBox-agree{
+		margin-bottom: 24px;
+	}
+
+	.contact-form textarea{
+		height: calc(16vh);
+	}
+	
+/* footer */
+
+.footer{
+	padding: 24px 0;
+}
+
+.footerLink-social{
+	gap: 8px;
+}
+
+.footerLink-social li{
+	width: 24px;
+}
+
+.footerContact{
+	padding-bottom: 20px;
+}
+
+.footerContact-info{
+	font-size: 16px;
+}
+
+.footerContact .material-symbols-outlined{
+	font-size: 24px;
+	padding-right: 8px;
+}
+
+.copyRight{
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding-top: 20px;
+	gap: 8px;
+}
+
+.copyRight ul{
+	flex-direction: column;
+	justify-content: center;
+	gap:8px;
+}
+
+.copyRight ul li a{
+	font-size: 16px;
+}
+}
